@@ -2,6 +2,7 @@ package com.ticclub.controller;
 
 import com.ticclub.dto.JwtResponse;
 import com.ticclub.dto.LoginRequest;
+import com.ticclub.dto.SignupRequest;
 import com.ticclub.dto.MessageResponse;
 import com.ticclub.model.Role;
 import com.ticclub.model.User;
