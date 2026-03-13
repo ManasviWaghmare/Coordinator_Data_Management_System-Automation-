@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — TIC Club Data Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/auth.css">
+</head>
+<body class="auth-page">
+    <!-- Ambient Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="auth-wrap">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <div class="logo-box"><i class="fa-solid fa-database"></i></div>
+                <h1>TIC Club</h1>
+                <p>COORDINATOR SYSTEM // ACCESS PORTAL</p>
+            </div>
+
+            <div class="alert error" id="alertBox">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span id="alertMsg">Invalid credentials.</span>
+            </div>
+
+            <form class="auth-form" id="loginForm" novalidate>
+                <div class="input-group">
+                    <label>Username</label>
+                    <div class="input-icon-wrap">
+                        <input class="input-field" type="text" id="username" placeholder="Enter your username" autocomplete="username" required>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="pass-wrap input-icon-wrap">
+                        <input class="input-field" type="password" id="password" placeholder="••••••••" autocomplete="current-password" required>
+                        <i class="fa-solid fa-lock"></i>
+                        <button type="button" class="toggle-pass" id="togglePass">
+                            <i class="fa-regular fa-eye" id="eyeIcon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-extras">
+                    <a href="forgot-password.html" class="form-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="auth-btn" id="loginBtn">
+                    <i class="fa-solid fa-right-to-bracket" id="btnIcon"></i>
+                    <span id="btnText">INITIALIZE ACCESS</span>
+                    <div class="spinner" id="loginSpinner"></div>
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p><i class="fa-solid fa-shield-halved" style="color:var(--cyan);margin-right:6px;"></i>SECURED BY JWT ENCRYPTION // SPRING BOOT</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/auth.js"></script>
+</body>
+</html>
